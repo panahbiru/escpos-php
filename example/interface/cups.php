@@ -5,7 +5,7 @@ use Mike42\Escpos\Printer;
 use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 
 try {
-    $connector = new CupsPrintConnector("EPSON_TM-T20");
+    $connector = new CupsPrintConnector("Printer_USB_Thermal_Printer");
     
     /* Print a "Hello world" receipt" */
     $printer = new Printer($connector);

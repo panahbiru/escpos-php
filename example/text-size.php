@@ -23,6 +23,10 @@ for ($i = 1; $i <= 8; $i++) {
 }
 $printer -> text("\n");
 
+$printer -> setTextSize(2, 2);
+$printer -> text(2);
+$printer -> text("\n");
+
 /* Width changing only */
 title($printer, "Change width only (height=4):\n");
 for ($i = 1; $i <= 8; $i++) {
