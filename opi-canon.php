@@ -1,6 +1,6 @@
 <?php
 include "ezsql.php";
-$thisdb         = new ezsql_mysqli('root','dhus','jalaniaga','127.0.0.1');
+$thisdb         = new ezsql_mysqli('root','','jalaniaga','192.168.56.12');
 $param = $argv[1];
 $data = $thisdb->get_row("SELECT * FROM transaksi WHERE id = '$param' LIMIT 1");
 $data_produk = $thisdb->get_results("SELECT * FROM produk WHERE id IN ($data->list_produk)");
@@ -10,7 +10,7 @@ require __DIR__ . '/autoload.php';
 use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 use Mike42\Escpos\EscposImage;
 use Mike42\Escpos\Printer;
-$connector = new CupsPrintConnector("Kasir58");
+$connector = new CupsPrintConnector("Canon_iP2800_series");
 $printer = new Printer($connector);
 
 $printer->setJustification(Printer::JUSTIFY_CENTER);

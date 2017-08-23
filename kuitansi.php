@@ -5,7 +5,7 @@ require __DIR__ . '/autoload.php';
 use Mike42\Escpos\PrintConnectors\CupsPrintConnector;
 use Mike42\Escpos\EscposImage;
 use Mike42\Escpos\Printer;
-$connector = new CupsPrintConnector("Printer_USB_Thermal_Printer");
+$connector = new CupsPrintConnector("Kasir58");
 $printer = new Printer($connector);
 
 $printer->setJustification(Printer::JUSTIFY_CENTER);
